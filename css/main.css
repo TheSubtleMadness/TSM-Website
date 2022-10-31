@@ -1,0 +1,122 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+h1,
+h2 {
+  color: #000000;
+}
+
+/* I used 50px for font-size here instead of Professor's 55px bc I wanted the entire name in one line.  Look for responsive ways to do that later */
+.top-logo {
+  height: auto;
+  font-weight: bold;
+  color: var(--secondaryColor) !important;
+  text-shadow: 2px 2px #FF0000;
+  font-size: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: "Qahiri", sans-serif;
+  /*Commenting Out Initial Font to Compare Options; 
+  font-family: "Splash", cursive; */
+  /* Added additional stylesheet links under the Google Fonts CDN on Index page in order to use this font */
+  background-color: #ffffff;
+}
+
+.material-symbols-outlined {
+  font-size: 60px;
+  color: var(--secondaryColor) !important;
+  position: relative;
+  top: 0px;
+}
+
+.sidebar-icon,
+.sidebar-icon a {
+  color: var(--secondaryColor) !important;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: var(--dominantColor) !important;
+}
+
+.nav-link {
+  font-weight: bold;
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.btn-search {
+  background-color: var(--secondaryColor) !important;
+  border-color: var(--secondaryColor) !important;
+  color: #ffffff !important;
+}
+
+.btn-search:hover {
+  color: var(--dominantColor) !important;
+  background-color: var(--secondaryColor) !important;
+}
+
+.footer-row {
+  background-color: var(--dominantColor) !important;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.footer-row a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.fa-social-media,
+.fa-social-media:hover {
+  font-size: 25px !important;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+Using Dummy Comment Lines to place the following code at the end of this document
+*/
+
+/* ADD THE CLASS .custom-toggler TO THE HAMBURGUER MENU*/
+/*under main.css added*/
+
+/* Set the border color */
+.custom-toggler.navbar-toggler {
+  border-color: #ffffff;
+}
+
+/*remove outline when hamburguer menu icon is clicked*/
+.custom-toggler:focus,
+.custom-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/* ADD THE CLASS .custom-toggler TO THE HAMBURGUER MENU*/

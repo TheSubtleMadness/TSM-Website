@@ -1,0 +1,13 @@
+:root {
+  /*colors*/
+  /* https://www.canva.com/colors/color-wheel/print/ff0000+000000+ffffff/  */
+  /*
+  60% of #FF0000 - Dominant
+  30% of #000000 - Secondary
+  10% of #FFFFFF - Accent
+  */
+
+  --dominantColor: #ff0000; /* var(--dominantColor) !important; */
+  --secondaryColor: #000000; /* var(--secondaryColor) !important; */
+  --accentColor: #ffffff; /* var(--accentColor) !important; */
+}

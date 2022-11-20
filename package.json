@@ -1,7 +1,7 @@
 {
-  "name": "dev-for-tsm-site",
+  "name": "TSM-Website",
   "version": "1.0.0",
-  "description": "",
+  "description": "Official Band Website for The Subtle Madness",
   "main": "index.html",
   "scripts": {
     "start": "serve",

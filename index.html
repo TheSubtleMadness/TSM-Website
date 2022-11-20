@@ -135,17 +135,29 @@
         <div class="offcanvas-body">
           <div class="text-center">
             <div class="spokesperson">
-              <img src="https://dummyimage.com/200x200/000/fff" />
+              <img
+                alt="spokesperson"
+                class="cropped-offcanvas"
+                src="/images/general/spokesperson.jpeg"
+              />
             </div>
             <br />
             <blockquote>
-              Some text as placeholder. In real life you can have the elements
-              you have chosen. Like, text, images, lists, etc.
+              Zero-Sum is the name of the debut album from Dallas,TX-based rock
+              band, The Subtle Madness. Listen now on all major streaming
+              services.
+              <cite>Some cite goes here</cite>
             </blockquote>
 
-            <a href="#">Item One</a>
-            <a href="#">Item Two</a>
-            <a href="#">Item Three</a>
+            <a class="btn btn-outline-primary btn-offcanvas-left" href="#"
+              >Item One</a
+            >
+            <a class="btn btn-outline-primary btn-offcanvas-left" href="#"
+              >Item Two</a
+            >
+            <a class="btn btn-outline-primary btn-offcanvas-left" href="#"
+              >Item Three</a
+            >
           </div>
         </div>
       </div>
@@ -203,8 +215,8 @@
               <!-- Commenting out Disabled link 
             <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>
-            </li>
-            </ul> -->
+            </li> -->
+            </ul>
             <form class="d-flex" role="search">
               <input
                 class="form-control me-2"
@@ -254,10 +266,11 @@
             aria-label="Slide 3"
           ></button>
         </div>
+        <!-- Replaced dummy images used as placeholders with 1900x600 cropped pics for home page top carousel.  Pics were uploaded into CodeSandbox, so a relative path is used for src on img tag.  Need to come back and choose final pics here, as well as update alt tags with proper accessibility descriptions for SEO -->
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="https://www.dummyimage.com/1900x600/cccccc/fff.jpg"
+              src="/images/carousel/carousel-1.jpeg"
               class="d-block w-100"
               alt="placeholder"
             />
@@ -270,7 +283,7 @@
           </div>
           <div class="carousel-item">
             <img
-              src="https://www.dummyimage.com/1900x600/cccccc/fff.jpg"
+              src="/images/carousel/carousel-2.jpeg"
               class="d-block w-100"
               alt="placeholder"
             />
@@ -283,7 +296,7 @@
           </div>
           <div class="carousel-item">
             <img
-              src="https://www.dummyimage.com/1900x600/cccccc/fff.jpg"
+              src="/images/carousel/carousel-3.jpeg"
               class="d-block w-100"
               alt="placeholder"
             />
@@ -366,7 +379,7 @@
         <div class="row">
           <div class="col">
             <img
-              src="https://www.dummyimage.com/400x400/cccccc/fff.jpg"
+              src="/images/general/section-1.jpeg"
               alt="placeholder"
               class="img-responsive volunteer-img"
             />
@@ -407,62 +420,70 @@
       <!-- End First Paragraph Section Here -->
 
       <!-- Begin Thumbnails for Gallery -->
-      <!-- Took AOS example from lecture and practiced using different animations until I could find a cohesive motion for the group -->
+      <!-- Took AOS example from lecture and practiced using different animations until I could find a cohesive motion for the group.  Also, this section allows for clicking on 200x200 thumbnail (from thumbs folder) to see the original image (from original folder.  Need to return and replace with final images. -->
       <div class="container text-center">
         <div class="row">
           <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 gallery-box">
-            <img
-              src="https://www.dummyimage.com/200x200/cccccc/fff.jpg"
-              alt="placeholder"
-              class="img-responsive img-fancybox"
-              data-aos="slide-left"
-              data-aos-easing="ease-out-cubic"
-              data-aos-anchor-placement="center-bottom"
-              data-aos-duration="2000"
-            />
-          </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 gallery-box">
-            <img
-              src="https://www.dummyimage.com/200x200/cccccc/fff.jpg"
-              alt="placeholder"
-              class="img-responsive img-fancybox"
-              data-aos="zoom-in-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-offset="0"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-duration="1000"
-            />
-          </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 gallery-box">
-            <img
-              src="https://www.dummyimage.com/200x200/cccccc/fff.jpg"
-              alt="placeholder"
-              class="img-responsive img-fancybox"
-              data-aos="fade-down"
-              data-aos-easing="ease-out-cubic"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-duration="1000"
-            />
-          </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 gallery-box">
-            <img
-              src="https://www.dummyimage.com/200x200/cccccc/fff.jpg"
-              alt="placeholder"
-              class="img-responsive img-fancybox"
-              data-aos="slide-right"
-              data-aos-easing="ease-out-cubic"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-duration="2000"
-            />
-          </div>
-        </div>
-        <!-- Begins button; This is also an example of creating a separate row inside of the same container -->
-        <div class="row gallery-button">
-          <div class="col-12 text-center">
-            <a href="gallery.html" class="btn btn-outline-primary btn-gallery">
-              View Gallery
+            <a data-fancybox href="/images/fancybox/originals/fancybox-1.jpeg">
+              <img
+                src="/images/fancybox/thumbs/fancybox-1.jpeg"
+                alt="placeholder"
+                class="img-responsive img-fancybox"
+                data-aos="slide-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="2000"
+              />
             </a>
           </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 gallery-box">
+            <a data-fancybox href="/images/fancybox/originals/fancybox-2.jpeg">
+              <img
+                src="/images/fancybox/thumbs/fancybox-2.jpeg"
+                alt="placeholder"
+                class="img-responsive img-fancybox"
+                data-aos="zoom-in-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-offset="0"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="1000"
+              />
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 gallery-box">
+            <a data-fancybox href="/images/fancybox/originals/fancybox-3.jpeg">
+              <img
+                src="/images/fancybox/thumbs/fancybox-3.jpeg"
+                alt="placeholder"
+                class="img-responsive img-fancybox"
+                data-aos="fade-down"
+                data-aos-easing="ease-out-cubic"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="1000"
+              />
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 gallery-box">
+            <a data-fancybox href="/images/fancybox/originals/fancybox-4.jpeg">
+              <img
+                src="/images/fancybox/thumbs/fancybox-4.jpeg"
+                alt="placeholder"
+                class="img-responsive img-fancybox"
+                data-aos="slide-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="2000"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Begins button; This is also an example of creating a separate row inside of the same container -->
+      <div class="row gallery-button">
+        <div class="col-12 text-center">
+          <a href="gallery.html" class="btn btn-outline-primary btn-gallery">
+            View Gallery
+          </a>
         </div>
       </div>
       <!-- End Thumbnails for Gallery -->
@@ -476,7 +497,7 @@
         <div class="row">
           <div class="col">
             <img
-              src="https://www.dummyimage.com/400x400/cccccc/fff.jpg"
+              src="/images/general/section-2.jpeg"
               alt="placeholder"
               class="img-responsive contact-img"
             />
@@ -523,27 +544,45 @@
         <div class="row">
           <div class="col">
             <img
-              src="https://www.dummyimage.com/250x250/cccccc/fff.jpg"
+              src="/images/staff/staff-1.jpeg"
               alt="placeholder"
               data-aos="zoom-in"
               class="cropped"
             />
+            <br />
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
+              dolorum neque natus commodi delectus dolorem.
+              <cite>Citing some person</cite>
+            </blockquote>
           </div>
           <div class="col">
             <img
-              src="https://www.dummyimage.com/250x250/cccccc/fff.jpg"
+              src="/images/staff/staff-2.jpeg"
               alt="placeholder"
               data-aos="zoom-in"
               class="cropped"
             />
+            <br />
+            <blockquote>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptas deleniti omnis assumenda expedita quas dolor earum?
+              <cite>Citing some person</cite>
+            </blockquote>
           </div>
           <div class="col">
             <img
-              src="https://www.dummyimage.com/250x250/cccccc/fff.jpg"
+              src="/images/staff/staff-3.jpeg"
               alt="placeholder"
               data-aos="zoom-in"
               class="cropped"
             />
+            <br />
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+              aspernatur dolorem commodi tempore labore enim omnis.
+              <cite>Citing some person</cite>
+            </blockquote>
           </div>
         </div>
       </div>

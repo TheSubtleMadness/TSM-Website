@@ -16,7 +16,7 @@ h2 {
   height: auto;
   font-weight: bold;
   color: var(--secondaryColor) !important;
-  text-shadow: 2px 2px #FF0000;
+  text-shadow: 2px 2px #ff0000;
   font-size: 50px;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -120,3 +120,73 @@ Using Dummy Comment Lines to place the following code at the end of this documen
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 /* ADD THE CLASS .custom-toggler TO THE HAMBURGUER MENU*/
+
+.spokesperson {
+  background-color: var(--secondaryColor) !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.spokesperson img {
+  border: 4px solid #ffffff !important;
+  border-radius: 50%;
+}
+
+/* code below ensures that spokesperson image border is round, even if viewed on a browser that does not support it.  We do so by creating the new class "cropped-offcanvas" and targeting it with the following declaration. */
+.cropped-offcanvas {
+  width: 200px;
+  height: 200px;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.btn-offcanvas-left {
+  background-color: var(--secondaryColor) !important;
+  border: 0 !important;
+  padding: 8px;
+  margin-top: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* the following declaration is targeting the created class only when the mouse cursor is hovering over it.  Used background color purple to follow the lecture, but will likely need to change to a color that better fits the overall site design. */
+.btn-offcanvas-left:hover {
+  background-color: var(--dominantColor) !important;
+  color: #ffffff;
+}
+
+blockquote {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0.25em 0px;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: var(--secondaryColor) !important;
+}
+
+/* the following declaration introduces the CSS pseudo-class ":before", which instructs the processing of whatever declaration follows the selector BEFORE anything else.  A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, the pseudo-class :hover can be used to select a button when a user's pointer hovers over the button and this selected button can then be styled.  See also the section of the declaration "content:" and it's value "\201c", which is shorthand for a citation quote. */
+
+blockquote::before {
+  display: block;
+  padding-left: 10px;
+  content: "\201c";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: var(--secondaryColor) !important;
+}
+
+blockquote cite {
+  color: var(--secondaryColor) !important;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
+}
